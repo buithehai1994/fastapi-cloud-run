@@ -11,7 +11,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the backend code into the container
-COPY backend /app/backend
+COPY app/backend /app/backend
 
 # Expose port 8000 (FastAPI default port)
 EXPOSE 8000
